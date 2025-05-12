@@ -5,68 +5,71 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shayla | Project Manager Portfolio</title>
 
-  <!-- Fonts and Libraries -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&family=Georgia&display=swap" rel="stylesheet">
+  <!-- Professional & Elegant Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
   <style>
     :root {
-      --primary: #48AAAD;
-      --secondary: #8f94fb;
-      --accent: #ffe97f;
-      --bg-light: #fefefe;
-      --text-dark: #1a1a1a;
+      --primary: #3b82f6;
+      --secondary: #6366f1;
+      --accent: #facc15;
+      --bg-light: #f9fafb;
+      --text-dark: #1e293b;
       --text-light: #ffffff;
     }
+
     body {
       margin: 0;
       padding: 0;
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to right, #f0f8ff, #ffe4ec, #d8f2ff);
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-light);
       color: var(--text-dark);
       scroll-behavior: smooth;
     }
+
     header {
       text-align: center;
-      padding: 20px 10px;
+      padding: 60px 20px 40px;
       background: linear-gradient(90deg, var(--primary), var(--secondary));
-      color: white;
+      color: var(--text-light);
+      position: relative;
     }
+
     .headshot {
       width: 140px;
       height: 140px;
       object-fit: cover;
       border-radius: 50%;
       border: 4px solid white;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      position: relative;
+      top: 0;
+      z-index: 2;
     }
+
     h1 {
-      font-family: 'Georgia', cursive;
-      font-size: 3.8rem;
-      margin: 10px 0 5px;
-      animation: fadeInDown 1.2s ease-out both;
+      font-family: 'Playfair Display', serif;
+      font-size: 3.2rem;
+      margin: 5px 0;
     }
+
     .role {
-      font-size: 1.3rem;
-      font-weight: 500;
+      font-size: 1.2rem;
+      font-weight: 600;
       color: var(--accent);
-      animation: fadeInUp 1s ease-out both;
+      margin: 4px 0;
     }
+
     .tagline {
-      font-size: 1.1rem;
-      color: #f5f5f5;
-      font-weight: 300;
-      margin-top: 5px;
+      font-size: 1rem;
+      font-weight: 400;
+      color: #e2e8f0;
+      margin-top: 2px;
     }
-    @keyframes fadeInDown {
-      0% { transform: translateY(-30px); opacity: 0; }
-      100% { transform: translateY(0); opacity: 1; }
-    }
-    @keyframes fadeInUp {
-      0% { transform: translateY(30px); opacity: 0; }
-      100% { transform: translateY(0); opacity: 1; }
-    }
+
     nav {
       background-color: #ffffff;
       box-shadow: 0 4px 8px rgba(0,0,0,0.05);
@@ -76,25 +79,25 @@
       padding: 12px 20px;
       gap: 25px;
     }
+
     nav a {
       color: var(--primary);
       font-weight: 600;
       text-decoration: none;
       transition: color 0.3s ease;
     }
+
     nav a:hover {
       color: var(--secondary);
     }
   </style>
 </head>
 <body>
-
-  <!-- Header -->
   <header>
-    <img src="images/Headshot.jpeg" alt="Shumaila A. Khan Headshot" class="headshot" data-aos="zoom-in">
+    <img src="images/Headshot.jpeg" alt="Shayla Headshot" class="headshot" data-aos="zoom-in">
     <h1>Shumaila A. Khan</h1>
     <p class="role">Project Manager | Dental Professional | Visionary</p>
-    <p class="tagline"><span id="typed"></span></p>
+    <p class="tagline">Leading Projects in Tech, Health, and Education</p>
   </header>
 
   <!-- Navigation -->
@@ -106,6 +109,9 @@
     <a href="#timeline">My Journey</a>
     <a href="#resume-preview">Resume</a>
     <a href="#contact">Contact Me</a>
+  </nav>
+</body>
+</html>  
   </nav>
 
   <!-- Professional Portfolio -->
