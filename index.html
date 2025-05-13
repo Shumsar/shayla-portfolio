@@ -313,11 +313,14 @@
     { id: "skill1", value: 90 },
     { id: "skill2", value: 85 },
     { id: "skill3", value: 80 },
-    { id: "skill4", value: 95 }
+    { id: "skill4", value: 95 },
+    { id: "skill5", value: 85 },
+    { id: "skill6", value: 88 }
   ];
   function animateSkills() {
     skills.forEach(skill => {
       const el = document.getElementById(skill.id);
+      if (!el) return;
       let i = 0;
       const interval = setInterval(() => {
         if (i >= skill.value) clearInterval(interval);
@@ -327,14 +330,19 @@
   }
   window.addEventListener("load", animateSkills);
 
-  // Testimonial Slider
+  // Testimonial Slider (FIXED)
   const testimonials = document.querySelectorAll(".testimonial");
   let currentIndex = 0;
-  setInterval(() => {
-    testimonials[currentIndex].style.display = "";
-    currentIndex = (currentIndex + 1) % testimonials.length;
-    testimonials[currentIndex].style.display = 
-  }, 4000);
+  if (testimonials.length > 0) {
+    testimonials.forEach((t, i) => (t.style.display = i === 0 ? "block" : "none"));
+    setInterval(() => {
+      testimonials[currentIndex].style.display = "none";
+      currentIndex = (currentIndex + 1) % testimonials.length;
+      testimonials[currentIndex].style.display ="none";
+      currentIndex = (currentIndex + 1) % testimonials.length;
+      testimonials[currentIndex].style.display = "block";
+    }, 4000);
+  }
 
   // Clock
   function updateClock() {
