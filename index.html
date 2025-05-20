@@ -2,387 +2,179 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shayla | Project Manager Portfolio</title>
-  <!-- Professional & Elegant Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shayla | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     :root {
-      --primary: #8b4513; /* SaddleBrown */
-      --secondary: #d2b48c; /* Tan */
-      --accent: #deb887; /* BurlyWood */
-      --highlight: #336699; /* Blue accent for headings */
-      --bg-light: #f9f5f0;
-      --text-dark: #3e2c23;
-      --text-light: #ffffff;
+      --primary: #0b3d91;
+      --text-dark: #1a1a1a;
+      --bg-light: #ffffff;
     }
-    body {
+    * {
       margin: 0;
       padding: 0;
-      font-family: 'Inter', sans-serif;
-      background: var(--bg-light);
-      color: var(--text-dark);
+      box-sizing: border-box;
       scroll-behavior: smooth;
     }
-    header {
-      text-align: center;
-      padding: 30px 20px 40px;
-      background: url('images/pm-minimal-bg.jpg') center/cover no-repeat, linear-gradient(90deg, var(--primary), var(--secondary));
-      color: var(--text-light);
-      position: relative;
-    }
-    .headshot {
-      width: 130px;
-      height: 130px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 4px solid white;
-      margin-bottom: -5px;
-      margin-top: 20px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-      position: relative;
-      top: 0;
-      z-index: 2;
-    }
-    h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.8rem;
-      margin: 5px 0 0;
-      color: var(--text-light);
-    }
-    .role {
-      font-size: 1.1rem;
-      font-weight: 600;
-      color: var(--accent);
-      margin: 5px 0 0;
-    }
-    .tagline {
-      font-size: 1rem;
-      font-weight: 400;
-      color: #f5e6dd;
-      margin-top: 5px;
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-light);
+      color: var(--text-dark);
     }
     nav {
-      background-color: #ffffff;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      background-color: var(--bg-light);
+      padding: 15px 40px;
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
-      padding: 12px 20px;
-      gap: 25px;
+      gap: 30px;
+      border-bottom: 1px solid #ccc;
+      position: sticky;
+      top: 0;
+      z-index: 999;
     }
     nav a {
+      text-decoration: none;
       color: var(--primary);
       font-weight: 600;
-      text-decoration: none;
-      transition: color 0.3s ease;
+      transition: 0.3s;
     }
     nav a:hover {
-      color: var(--secondary);
+      color: #555;
+    }
+    section {
+      padding: 80px 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 2.4rem;
+      color: var(--primary);
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .flex-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: center;
+      justify-content: center;
+    }
+    .flex-row img {
+      width: 300px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .text-box {
+      flex: 1;
+      min-width: 280px;
+      max-width: 500px;
+    }
+    ul.timeline {
+      list-style: none;
+      padding-left: 20px;
+    }
+    ul.timeline li {
+      padding: 10px 0;
+      font-size: 1.1rem;
+    }
+    .certification {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    iframe {
+      border: 2px solid #ccc;
+      border-radius: 10px;
     }
   </style>
 </head>
 <body>
-  <header style="background: url('images/pm-minimal-bg.jpg') center/cover no-repeat, linear-gradient(90deg, var(--primary), var(--secondary)); padding: 40px 20px; color: var(--text-dark); display: flex; align-items: center; gap: 30px; justify-content: center; flex-wrap: wrap; text-align: left;">
-  <img src="images/Headshot.jpeg" alt="Shayla Headshot" style="width: 160px; height: 160px; object-fit: cover; border-radius: 8px; border: 4px solid white; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);">
-  <div>
-    <h1 style="font-family: 'Playfair Display', serif; font-size: 2.8rem; margin: 0; color: black;">Shumaila A. Khan</h1>
-    <p style="font-size: 1.1rem; font-weight: 600; color: black; margin: 5px 0;">Project Manager | Dental Professional | Visionary</p>
-    <p style="font-size: 1rem; color: black; margin: 5px 0;">Leading Projects in Tech, Health, and Education</p>
-    <p style="font-size: 1rem; color: black; font-weight: bold; margin: 5px 0;">shumsark@gmail.com | +1 (989) 621-2662</p>
-  </div>
-</header>
-  <!-- Navigation -->
-  <nav>
-    <a href="#professional">Professional Portfolio</a>
-    <a href="#about">About Me</a>
-    <a href="#skills">Skills & Tools</a>
-    <a href="#certifications">Certifications</a>
-    <a href="#timeline">My Journey</a>
-    <a href="#resume-preview">Resume</a>
-    <a href="#contact">Contact Me</a>
-  </nav>
-</body>
-</html>
-  <!-- Professional Portfolio -->
-  <section id="professional" style="padding: 60px 30px;" data-aos="fade-up">
-    <h2 style="text-align: center; font-size: 2.6rem; color: var(--primary);">Professional Portfolio</h2>
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 40px;">
-      <div style="width: 300px;" data-aos="zoom-in">
-        <img src="images/Library.jpeg" alt="Library Learning" style="width: 100%; border-radius: 12px 12px 0 0;">
-        <div style="padding: 15px;">Continuous learning at CMU library—my favorite spot for ideation and research.</div>
-      </div>
-      <div style="width: 300px;" data-aos="zoom-in" data-aos-delay="100">
-        <img src="images/image3.jpeg" alt="Team Collaboration" style="width: 100%; border-radius: 12px 12px 0 0;">
-        <div style="padding: 15px;">Collaborating with collegues — where tech, healthcare, and leadership align.</div>
-      </div>
-      <div style="width: 300px;" data-aos="zoom-in" data-aos-delay="200">
-        <img src="images/Cityview.JPG" alt="Urban Leadership" style="width: 100%; border-radius: 12px 12px 0 0;">
-        <div style="padding: 15px;">Bold moves in the city—leading projects that make real impact.</div>
-      </div>
-    </div>
-  </section>
-  <!-- About Me -->
-  <section id="about" style="padding: 60px 30px;" data-aos="fade-up">
-    <h2 style="text-align: center; font-size: 2.6rem; color: var(--primary);">About Me</h2>
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 40px;">
-      <div style="width: 250px;" data-aos="flip-left">
-        <img src="images/Graduation.jpeg" style="width: 100%; border-radius: 15px;" alt="Graduation Moment">
-        <p style="text-align: center;">🎓 A moment of pride – Master’s Graduation at CMU.</p>
-      </div>
-      <div style="width: 250px;" data-aos="flip-left" data-aos-delay="100">
-        <img src="images/1000121136.JPG" style="width: 100%; border-radius: 15px;" alt="CMU Flag">
-        <p style="text-align: center;">🏳 CMU spirit – holding the flag of achievement.</p>
-      </div>
-      <div style="width: 250px;" data-aos="flip-left" data-aos-delay="200">
-        <img src="images/1000139462.JPG" style="width: 100%; border-radius: 15px;" alt="With President">
-        <p style="text-align: center;">🤝 Leadership engagement with CMU President.</p>
-      </div>
-      <div style="width: 250px;" data-aos="flip-left" data-aos-delay="300">
-        <img src="images/Capstone.jpeg" style="width: 100%; border-radius: 15px;" alt="Capstone">
-        <p style="text-align: center;">📊 Explaining my capstone on AI-powered PMOs at PwC. Earned First Place Capstone Presentation Competition (1/25)</p>
-      </div>
-    </div>
-  </section>
-<!-- shumsark@gmail.com | +1(989)6212662 -->
-  <section id="professional" style="padding: 60px 30px;" data-aos="fade-up">
-    <h2 style="text-align: center; font-size: 2.0rem; color: var(--primary);">shumsark@gmail.com | +1(989)6212662</h2>
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 40px;">
-      <div style="width: 300px;" data-aos="zoom-in">
-        </div>
-    </div>
-  </section>
-<!-- Skills -->
-  <section id="skills" style="padding: 60px 30px; background: linear-gradient(to right, #ffe0b2);">
-    <h2 style="text-align: center; font-size: 2.6rem; color: var(--primary);" data-aos="fade-up">Skills & Tools</h2>
-    <div style="max-width: 800px; margin: 40px auto;" data-aos="fade-right">
-      <p>✅ Agile Project Management</p><progress id="skill1" value="0" max="100"></progress>
-      <p>✅ AI Driven Systems</p><progress id="skill1" value="0" max="100"></progress>
-      <p>✅ Requirement Gathering & Documentation</p><progress id="skill2" value="0" max="100"></progress>
-      <p>✅ Data Analysis & Dashboarding</p><progress id="skill3" value="0" max="100"></progress>
-      <p>✅ Leadership & Client Engagement</p><progress id="skill4" value="0" max="100"></progress>
-      <p>✅ ERP & Odoo Automation</p><progress id="skill5" value="0" max="100"></progress>
-      <p>✅ Python, SQL, Power BI</p><progress id="skill6" value="0" max="100"></progress>
-    </div>
-  </section>
-  <!-- Certifications -->
-<section id="certifications" style="padding: 60px 30px;" data-aos="fade-up">
-  <h2 style="text-align: center; font-size: 2.6rem; color: var(--primary);">Certifications</h2>
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 40px;">
-    <div style="width: 280px;" data-aos="zoom-in">
-      <embed src="images/PMI-Certification.pdf" type="application/pdf" width="100%" height="300px" style="border-radius: 15px;">
-      <p style="text-align: center;">PMP – Project Management Professional by PMI</p>
-    </div>
-    <div style="width: 280px;" data-aos="zoom-in" data-aos-delay="100">
-      <embed src="images/Google-PM.pdf" type="application/pdf" width="100%" height="300px" style="border-radius: 15px;">
-      <p style="text-align: center;">Google Project Management Certificate</p>
-    </div>
-    <div style="width: 280px;" data-aos="zoom-in" data-aos-delay="200">
-      <embed src="images/Google-DA.pdf" type="application/pdf" width="100%" height="300px" style="border-radius: 15px;">
-      <p style="text-align: center;">Google Data Analytics Professional Certificate</p>
+
+<!-- Navigation -->
+<nav>
+  <a href="#about">About Me</a>
+  <a href="#journey">Journey</a>
+  <a href="#projects">Projects</a>
+  <a href="#certifications">Certifications</a>
+  <a href="#resume-preview">Resume</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- About Me -->
+<section id="about">
+  <h2>About Me</h2>
+  <div class="flex-row">
+    <img src="images/Graduation.jpeg" alt="Graduation">
+    <div class="text-box">
+      <p>Hello! I’m <strong>Shumaila A. Khan</strong>, a project manager with a background in dentistry, currently leading innovation in healthcare, education, and technology.</p>
+      <p>My journey spans continents and careers—from dental clinics in Pakistan to data dashboards and digital systems in the United States.</p>
+      <p>I'm passionate about impactful projects, meaningful connections, and lifelong learning.</p>
     </div>
   </div>
 </section>
-<!-- Timeline / Journey -->
-<section id="timeline" style="padding: 60px 30px;" data-aos="fade-up">
-  <h2 style="text-align: center; font-size: 2.6rem; color: var(--primary);">My Journey</h2>
-  <ul style="max-width: 800px; margin: auto; padding: 20px; list-style: none;">
-    <li data-aos="fade-left"><strong>🎓 2024</strong> – MS in Project Management, CMU (4.0 GPA)</li>
-    <li data-aos="fade-left" data-aos-delay="100"><strong>2023–2024</strong> – Graduate Assistant, Innovation & Student Affairs</li>
-    <li data-aos="fade-left" data-aos-delay="200"><strong>2019–2022</strong> – Dentist/Project Coordinator at Al Moiz Medical & Dental Center</li>
-    <li data-aos="fade-left" data-aos-delay="300"><strong>2017</strong> – BDS from University of Karachi</li>
+
+<!-- Journey -->
+<section id="journey">
+  <h2>My Journey</h2>
+  <ul class="timeline">
+    <li><strong>🎓 2024</strong> – Master’s in Project Management, Central Michigan University (4.0 GPA)</li>
+    <li><strong>2023–2024</strong> – Graduate Assistant, Innovation & Student Affairs</li>
+    <li><strong>2019–2022</strong> – Dentist/Project Coordinator at Al Moiz Medical & Dental Center</li>
+    <li><strong>2017</strong> – Bachelor of Dental Surgery, University of Karachi</li>
   </ul>
 </section>
+
+<!-- Projects -->
+<section id="projects">
+  <h2>Professional Projects</h2>
+  <div class="flex-row">
+    <img src="images/Library.jpeg" alt="Library Learning">
+    <div class="text-box">
+      <p><strong>Library Learning:</strong> My favorite spot for ideation and deep work—where many of my strategies were born.</p>
+    </div>
+  </div>
+  <div class="flex-row" style="margin-top: 40px;">
+    <img src="images/image3.jpeg" alt="Team Collaboration">
+    <div class="text-box">
+      <p><strong>Team Collaboration:</strong> Capturing the synergy of working on high-impact projects in health tech and digital systems.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Certifications -->
+<section id="certifications">
+  <h2>Certifications</h2>
+  <div class="certification">
+    <p><strong>PMP – Project Management Professional</strong><br>Issued by PMI</p>
+    <embed src="images/PMI-Certification.pdf" type="application/pdf" width="80%" height="400px">
+  </div>
+  <div class="certification">
+    <p><strong>Google Project Management Certificate</strong></p>
+    <embed src="images/Google-PM.pdf" type="application/pdf" width="80%" height="400px">
+  </div>
+  <div class="certification">
+    <p><strong>Google Data Analytics Certificate</strong></p>
+    <embed src="images/Google-DA.pdf" type="application/pdf" width="80%" height="400px">
+  </div>
+</section>
+
 <!-- Resume Preview -->
-<section id="resume-preview" style="padding: 60px 30px; background: #f9f9f9;" data-aos="fade-up">
-  <h2 style="text-align: center; font-size: 2.6rem; color: var(--primary);">Resume Preview</h2>
-  <div style="text-align: center; margin-top: 30px;">
-    <iframe src="Shumaila-resume.pdf" width="90%" height="600px" style="border: 2px solid #ccc; border-radius: 10px;" data-aos="zoom-in"></iframe>
-    <br>
-    <a href="Shumaila-resume.pdf" download class="resume-button">Download Resume</a>
+<section id="resume-preview">
+  <h2>Resume</h2>
+  <div style="text-align: center;">
+    <iframe src="Shumaila-resume.pdf" width="85%" height="600px"></iframe><br><br>
+    <a href="Shumaila-resume.pdf" download style="color: var(--primary); font-weight: bold; text-decoration: underline;">Download Resume</a>
   </div>
 </section>
 
-<!-- Testimonials -->
-<section id="testimonials" style="padding: 60px 30px;" data-aos="fade-up">
-  <h2 style="text-align: center; font-size: 2.6rem; color: var(--primary);">Testimonials</h2>
-  <div class="testimonial-slider" style="max-width: 600px; margin: auto;">
-    <div class="testimonial" style="text-align: center;">
-      <p><em>"Shayla leads with clarity and purpose—an exceptional team player!"</em></p>
-      <p><strong>– Dr. Abdul Basit, Senior Director, Al-Moiz Medical & Dental Center</strong></p>
-    </div>
-    <div class="testimonial" style="text-align: center;">
-      <p><em>"Shumaila showed strong and rapid intellectual grasp of the highly technical concepts required to win the Capstone Competition."</em></p>
-      <p><strong>– Michael Dillon, Assistant Professor, CMU</strong></p>
-    </div>
+<!-- Contact -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <div style="text-align: center; font-size: 1.2rem;">
+    📧 <a href="mailto:shumsark@gmail.com" style="color: var(--primary); text-decoration: none;">shumsark@gmail.com</a><br><br>
+    📞 <a href="tel:+19896212662" style="color: var(--primary); text-decoration: none;">+1 (989) 621-2662</a>
   </div>
 </section>
-<!-- Contact Me -->
-<section id="contact-quick" style="padding: 40px 30px; background-color: #f6faff;" data-aos="fade-up">
-  <h2 style="text-align: center; font-size: 2.4rem; color: var(--primary);">Contact Me</h2>
-  <p style="text-align: center; font-size: 1.2rem; font-weight: 600; color: black; margin-top: 15px;">
-    📧 Email: <a href="mailto:shumsark@gmail.com" style="color: var(--primary); text-decoration: none;">shumsark@gmail.com</a><br>
-    📞 Phone: <a href="tel:+19896212662" style="color: var(--primary); text-decoration: none;">+1 (989) 621-2662</a>
-  </p>
-</section>
-<!-- Request For Information -->
-<section id="contact" style="padding: 60px 30px; background: #f6faff;" data-aos="fade-up">
-<h2 style="text-align: center; font-size: 2.6rem; color: var(--primary);">Request For Information</h2>
-  <form action="https://formspree.io/f/mqaqdgnd" method="POST" style="max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 15px; box-shadow: 0 6px 20px rgba(0,0,0,0.1);">
-    <input type="text" name="name" placeholder="Your Name" required style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 8px; border: 1px solid #ccc;"><br>
-    <input type="email" name="email" placeholder="Your Email" required style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 8px; border: 1px solid #ccc;"><br>
-    <textarea name="message" placeholder="Your Message" rows="5" required style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc;"></textarea><br>
-    <button type="submit" style="background-color: var(--primary); color: white; padding: 12px 25px; border: none; border-radius: 10px; margin-top: 15px;">📨 Send Message</button>
-  </form>
-</section>
 
-<!-- Floating Chat -->
-<a href="mailto:shumsark@gmail.com" title="Chat with Shayla" style="
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  background: #25D366;
-  color: white;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  font-size: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  z-index: 999;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.2);"></a>
-<!-- Footer -->
-<footer style="text-align: center; padding: 30px; background: var(--primary); color: white;">
-  <p>New Jersey | EST: <span id="clock"></span> | <a href="mailto:shumsark@gmail.com" style="color: #ffd;">shumsark@gmail.com</a></p>
-  <p>&copy; 2025 Shayla.com</p>
-</footer>
-
-<!-- Libraries -->
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-<script>
-  AOS.init(); // Animation on Scroll
-
-  // Typing Effect
-  new Typed("#typed", {
-    strings: [
-      "Project Strategist | Visionary Thinker",
-      "From Dentistry to Data – My Journey",
-      "Leading Projects in Tech, Health, and Education"
-    ],
-    typeSpeed: 40,
-    backSpeed: 20,
-    backDelay: 2500,
-    loop: true
-  });
-
-  // Radar Chart
-  const ctx = document.getElementById("skillRadarChart").getContext("2d");
-  new Chart(ctx, {
-    type: "radar",
-    data: {
-      labels: ["Agile PM", "Documentation", "Data Analysis", "Leadership", "Communication", "Tools"],
-      datasets: [{
-        label: "Proficiency",
-        data: [90, 85, 88, 93, 92, 87],
-        backgroundColor: "rgba(20, 93, 160, 0.2)",
-        borderColor: "#145DA0",
-        pointBackgroundColor: "#145DA0"
-      }]
-    },
-    options: {
-      scales: {
-        r: {
-          angleLines: { color: "#ddd" },
-          grid: { color: "#eee" },
-          pointLabels: { color: "#333" },
-          min: 0,
-          max: 100
-        }
-      }
-    }
-  });
-
-  // Skill Bars Animation
-  const skills = [
-    { id: "skill1", value: 90 },
-    { id: "skill2", value: 85 },
-    { id: "skill3", value: 80 },
-    { id: "skill4", value: 95 },
-    { id: "skill5", value: 85 },
-    { id: "skill6", value: 88 }
-  ];
-  function animateSkills() {
-    skills.forEach(skill => {
-      const el = document.getElementById(skill.id);
-      if (!el) return;
-      let i = 0;
-      const interval = setInterval(() => {
-        if (i >= skill.value) clearInterval(interval);
-        else el.value = ++i;
-      }, 15);
-    });
-  }
-  window.addEventListener("load", animateSkills);
-
-  // Testimonial Slider (FIXED)
-  const testimonials = document.querySelectorAll(".testimonial");
-  let currentIndex = 0;
-  if (testimonials.length > 0) {
-    testimonials.forEach((t, i) => (t.style.display = i === 0 ? "block" : "none"));
-    setInterval(() => {
-      testimonials[currentIndex].style.display = "none";
-      currentIndex = (currentIndex + 1) % testimonials.length;
-      testimonials[currentIndex].style.display ="none";
-      currentIndex = (currentIndex + 1) % testimonials.length;
-      testimonials[currentIndex].style.display = "block";
-    }, 4000);
-  }
-
-  // Clock
-  function updateClock() {
-    const now = new Date();
-    document.getElementById("clock").textContent = now.toLocaleTimeString([], {
-      hour: "2-digit",
-      minute: "2-digit"
-    });
-  }
-  setInterval(updateClock, 1000);
-  updateClock();
-
-  // Dark Mode Toggle
-  function toggleDarkMode() {
-    document.body.classList.toggle("dark-mode");
-  }
-
-  // Theme Switcher
-  function switchTheme(theme) {
-    document.body.className = theme;
-  }
-
-  // Language Toggle
-  const translations = {
-    en: {
-      heroRole: "Project Manager | Dental Professional | Visionary",
-      resumeButton: "Download Resume",
-    },
-    ur: {
-      heroRole: "پروجیکٹ مینیجر | ڈینٹل پروفیشنل | وژنری",
-      resumeButton: "ریزیومے ڈاؤن لوڈ کریں",
-    }
-  };
-  let currentLang = "en";
-  function toggleLanguage() {
-    currentLang = currentLang === "en" ? "ur" : "en";
-    document.getElementById("heroRole").innerText = translations[currentLang].heroRole;
-    document.getElementById("resumeButton").innerText = translations[currentLang].resumeButton;
-  }
-</script>
 </body>
 </html>
