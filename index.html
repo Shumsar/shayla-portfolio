@@ -1,274 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shumaila Khan | Portfolio</title>
-
-<!-- Fonts & Icons -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-<style>
-:root {
-  --primary: #0a1f44;
-  --primary-soft: #1f3c88;
-  --secondary: #f4f6f8;
-  --text-dark: #0b0b0b;
-  --text-light: #ffffff;
-}
-
-body {
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  background: #ffffff;
-  color: var(--text-dark);
-  scroll-behavior: smooth;
-  line-height: 1.7;
-}
-
-/* NAV */
-nav {
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  gap: 22px;
-  padding: 14px 20px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
-nav a {
-  color: var(--primary);
-  text-decoration: none;
-  font-weight: 600;
-}
-nav a:hover {
-  color: var(--primary-soft);
-}
-
-/* SECTIONS */
-section {
-  padding: 80px 30px;
-  border-bottom: 1px solid #e6e6e6;
-}
-.section-title {
-  font-size: 2.6rem;
-  color: var(--primary);
-  text-align: center;
-  margin-bottom: 35px;
-  letter-spacing: -0.5px;
-}
-
-/* HERO */
-#about {
-  background: linear-gradient(135deg, #0a1f44, #123072);
-  color: white;
-}
-#about p {
-  max-width: 800px;
-  margin: auto;
-}
-
-/* IMAGE GRID */
-.image-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
-.image-row img {
-  width: 280px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 16px;
-  box-shadow: 0 14px 30px rgba(0,0,0,0.25);
-  transition: transform .4s ease, box-shadow .4s ease;
-}
-.image-row img:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 22px 45px rgba(0,0,0,0.35);
-}
-
-/* SKILLS */
-.skills-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 35px;
-}
-.skill {
-  width: 120px;
-  text-align: center;
-}
-.skill i {
-  font-size: 28px;
-  color: var(--primary);
-}
-
-/* RESUME SLIDER */
-.resume-slider {
-  max-width: 900px;
-  margin: auto;
-  background: white;
-  padding: 20px;
-  border-radius: 22px;
-  box-shadow: 0 40px 90px rgba(0,0,0,0.35);
-  position: relative;
-}
-.resume-track {
-  display: flex;
-  transition: transform .7s ease;
-}
-.resume-slide {
-  min-width: 100%;
-  height: 650px;
-  border: none;
-}
-.resume-nav {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(10,31,68,.8);
-  color: white;
-  border: none;
-  font-size: 22px;
-  padding: 14px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-.resume-nav.left { left: -20px; }
-.resume-nav.right { right: -20px; }
-
-.resume-indicator {
-  text-align: center;
-  margin-top: 14px;
-  color: #444;
-  font-weight: 500;
-}
-
-.resume-download {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 28px;
-  background: var(--primary);
-  color: white;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-/* FOOTER */
-footer {
-  background: var(--primary);
-  color: white;
-  padding: 35px;
-  text-align: center;
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shayla | Project Manager Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <style>
+    :root {
+      --primary: #1a1a2e; /* Navy */
+      --secondary: #e6e6e6; /* Light Gray */
+      --text-dark: #111;
+      --text-light: #fff;
+    }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: white;
+      color: var(--text-dark);
+      scroll-behavior: smooth;
+    }
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    nav {
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 12px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    nav a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #555;
+    }
+    section {
+      padding: 60px 30px;
+    }
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: center;
+      justify-content: center;
+    }
+    .about-section img {
+      width: 350px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+    .about-text {
+      max-width: 600px;
+    }
+    .section-title {
+      font-size: 2.5rem;
+      color: var(--primary);
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  </style>
 </head>
-
 <body>
 
+<!-- Navigation -->
 <nav>
-  <a href="#about">About</a>
+  <a href="#about">About Me</a>
   <a href="#professional">Professional</a>
-  <a href="#capstone">Capstone</a>
   <a href="#skills">Skills</a>
-  <a href="#resume">Resume</a>
+  <a href="#certifications">Certifications</a>
+  <a href="#timeline">Journey</a>
+  <a href="#resume-preview">Resume</a>
   <a href="#contact">Contact</a>
 </nav>
 
-<section id="about">
-<h2 class="section-title">About Me</h2>
-<p>Hello! I am <strong>Shumaila A. Khan</strong>, a systems‑driven project and operations professional with experience across healthcare, education, and manufacturing environments.</p>
+<!-- ABOUT ME - LANDING PAGE -->
+<section id="about" style="background-color: #f5f5f5; padding: 60px 30px;">
+  <h2 class="section-title">About Me</h2>
+  <div class="about-section" data-aos="fade-up">
+<img src="images/Graduation.jpeg" alt="Graduation Moment" width="280" height="300" style="border-radius: 15px; object-fit: cover;">
+    <div class="about-text">
+      <p>Hello! I am <strong>Shumaila A. Khan</strong>, known to many as Shayla. I started my journey as a dental surgeon in Pakistan and transitioned into project management after moving to the U.S.</p>
+      <p>With a Master’s in Project Management and top awards from Central Michigan University, I now lead digital, healthcare, and educational initiatives with impact-driven leadership and tech-powered systems.</p>
+      <p>You will often find me mentoring, managing, or innovating whether through AI dashboards, automated inventory, or just cooking and hosting friends in my downtime. 📊</p>
+    </div>
+  </div>
 </section>
+  <!-- WHO I AM -->
+<section id="who-i-am">
+  <h2 class="section-title">Who I Am</h2>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 40px;">
 
+    <div style="width: 280px;" data-aos="zoom-in">
+      <img src="images/1000139462.JPG" alt="Leadership at CMU" width="100%" height="300px" style="border-radius: 15px; object-fit: cover;">
+    </div>
+    <div style="width: 280px;" data-aos="zoom-in" data-aos-delay="100">
+      <img src="images/IMG_0607.jpeg" alt="Celebrating Journey" width="100%" height="300px" style="border-radius: 15px; object-fit: cover;">
+    </div>
+  </div>
+  <div style="max-width: 700px; margin: 40px auto 0; text-align: center; font-size: 1.1rem;" data-aos="fade-up">
+    <p>
+      I am someone who carries both professionalism and warmth in every environment I step into. Whether it’s engaging with university leadership, presenting at academic competitions, or simply celebrating milestones with peers, I bring presence, energy, and authenticity. These moments remind me of how far I have come and reflect my belief in continuous growth, inclusive leadership, and staying grounded in purpose.
+    </p>
+  </div>
+</section>
+</section>
+<!-- PROFESSIONAL PORTFOLIO -->
 <section id="professional">
-<h2 class="section-title">Professional Portfolio</h2>
-<div class="image-row" data-aos="fade-up">
-<img src="images/Graduation.jpeg">
-<img src="images/Library.jpeg">
-<img src="images/Cityview.JPG">
-</div>
+  <h2 class="section-title">Professional Portfolio</h2>
+  <!-- Portfolio Images -->
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 40px;">
+    <div style="width: 280px;" data-aos="zoom-in">
+      <img src="images/Library.jpeg" alt="CMU Library" width="100%" height="300px" style="border-radius: 15px; object-fit: cover;">
+    </div>
+    <div style="width: 280px;" data-aos="zoom-in" data-aos-delay="100">
+      <img src="images/image3.jpeg" alt="Team Collaboration" width="100%" height="300px" style="border-radius: 15px; object-fit: cover;">
+    </div>
+    <div style="width: 280px;" data-aos="zoom-in" data-aos-delay="200">
+      <img src="images/Cityview.JPG" alt="Urban Leadership" width="100%" height="300px" style="border-radius: 15px; object-fit: cover;">
+    </div>
+  </div>
+  <!-- Text Description -->
+  <div style="max-width: 800px; margin: 40px auto 0; text-align: center; font-size: 1.1rem; line-height: 1.6;" data-aos="fade-up">
+    <p>
+      As a project manager with roots in both healthcare and technology, my portfolio is a reflection of adaptability, innovation, and resilience. Whether it’s leading agile teams, optimizing digital workflows, or enhancing systems for clients in healthcare and education, I take pride in delivering impact driven outcomes. These moments capture the essence of how I ideate, collaborate, and transform strategy into action on campus, in the field, and across sectors.
+    </p>
+  </div>
+</section>
+<!-- CAPSTONE PROJECT SHOWCASE -->
+<section id="capstone" style="background-color: #f5f5f5; padding: 60px 30px;">
+  <h2 class="section-title">Capstone Project Showcase</h2>
+  <!-- Image Row -->
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 40px;">
+  
+    <div style="width: 280px;" data-aos="zoom-in">
+      <img src="images/IMG_2832.jpeg" alt="Capstone Presentation Front View" width="280" height="300" style="border-radius: 15px; object-fit: cover; object-position: top;">
+    </div>
+    <div style="width: 280px;" data-aos="zoom-in" data-aos-delay="100">
+      <img src="images/Capstone.jpeg" alt="Capstone Stage" width="280" height="300" style="border-radius: 15px; object-fit: cover; object-position: top;">
+    </div>
+  </div>
+  <!-- Unified Paragraph Description -->
+  <div style="max-width: 800px; margin: 40px auto 0; text-align: center; font-size: 1.1rem; line-height: 1.6;" data-aos="fade-up">
+    <p>
+      My capstone project, presented at Central Michigan University, focused on integrating Artificial Intelligence into Virtual Project Management Offices (PMOs) to enhance healthcare delivery through PwC’s hybrid models. These photos capture defining moments from the final showcase, where my research and execution earned First Place out of 25 projects. The experience reflects not only my technical capability and project strategy but also my passion for transforming systems with real-world value.
+    </p>
+  </div>
+</section>
+<!-- SKILLS & TOOLS -->
+<section id="skills" style="background: #f8f8f8;">
+  <h2 class="section-title">Skills & Tools</h2>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; padding-top: 30px; max-width: 1000px; margin: auto;" data-aos="fade-up">
+
+    <div style="text-align: center; width: 120px;">
+      <i class="fas fa-project-diagram fa-2x" style="color: #1a1a2e;"></i>
+      <p>Agile PM</p>
+    </div>
+    <div style="text-align: center; width: 120px;">
+      <i class="fas fa-robot fa-2x" style="color: #1a1a2e;"></i>
+      <p>AI Systems</p>
+    </div>
+    <div style="text-align: center; width: 120px;">
+      <i class="fas fa-file-alt fa-2x" style="color: #1a1a2e;"></i>
+      <p>Documentation</p>
+    </div>
+    <div style="text-align: center; width: 120px;">
+      <i class="fas fa-chart-bar fa-2x" style="color: #1a1a2e;"></i>
+      <p>Dashboards</p>
+    </div>
+    <div style="text-align: center; width: 120px;">
+      <i class="fas fa-users fa-2x" style="color: #1a1a2e;"></i>
+      <p>Leadership</p>
+    </div>
+    <div style="text-align: center; width: 120px;">
+      <i class="fas fa-database fa-2x" style="color: #1a1a2e;"></i>
+      <p>SQL</p>
+    </div>
+    <div style="text-align: center; width: 120px;">
+      <i class="fas fa-cogs fa-2x" style="color: #1a1a2e;"></i>
+      <p>Odoo ERP</p>
+    </div>
+    <div style="text-align: center; width: 120px;">
+      <i class="fas fa-code fa-2x" style="color: #1a1a2e;"></i>
+      <p>Python</p>
+    </div>
+    <div style="text-align: center; width: 120px;">
+      <i class="fas fa-chart-pie fa-2x" style="color: #1a1a2e;"></i>
+      <p>Power BI</p>
+    </div>
+    <!-- New: Workflow Automation -->
+    <div style="text-align: center; width: 120px;">
+      <i class="fas fa-sync-alt fa-2x" style="color: #1a1a2e;"></i>
+      <p>Automation</p>
+    </div>
+    <!-- New: HealthTech Project Coordination -->
+    <div style="text-align: center; width: 120px;">
+      <i class="fas fa-notes-medical fa-2x" style="color: #1a1a2e;"></i>
+      <p>HealthTech PM</p>
+    </div>
+  </div>
 </section>
 
-<section id="capstone" style="background:#f4f6f8;">
-<h2 class="section-title">Capstone Project</h2>
-<div class="image-row" data-aos="fade-up">
-<img src="images/IMG_2832.jpeg">
-<img src="images/Capstone.jpeg">
-</div>
-<p style="max-width:850px;margin:40px auto;text-align:center;">
-My award‑winning capstone explored AI‑enabled Virtual PMOs to improve healthcare delivery using PwC hybrid models.
-</p>
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <h2 class="section-title">Certifications</h2>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 40px;">
+    <div style="width: 280px;" data-aos="zoom-in">
+      <embed src="images/PMI-Certification.pdf" type="application/pdf" width="100%" height="300px" style="border-radius: 15px;">
+      <p style="text-align: center;">PMP – Project Management Professional by PMI</p>
+    </div>
+    <div style="width: 280px;" data-aos="zoom-in" data-aos-delay="100">
+      <embed src="images/Google-PM.pdf" type="application/pdf" width="100%" height="300px" style="border-radius: 15px;">
+      <p style="text-align: center;">Google Project Management Certificate</p>
+    </div>
+    <div style="width: 280px;" data-aos="zoom-in" data-aos-delay="200">
+      <embed src="images/Google-DA.pdf" type="application/pdf" width="100%" height="300px" style="border-radius: 15px;">
+      <p style="text-align: center;">Google Data Analytics Certificate</p>
+    </div>
+  </div>
 </section>
 
-<section id="skills">
-<h2 class="section-title">Skills & Tools</h2>
-<div class="skills-grid" data-aos="fade-up">
-<div class="skill"><i class="fas fa-database"></i><p>SQL</p></div>
-<div class="skill"><i class="fas fa-chart-bar"></i><p>Power BI</p></div>
-<div class="skill"><i class="fas fa-code"></i><p>Python</p></div>
-<div class="skill"><i class="fas fa-cogs"></i><p>ERP</p></div>
-<div class="skill"><i class="fas fa-users"></i><p>Leadership</p></div>
-<div class="skill"><i class="fas fa-sync-alt"></i><p>Automation</p></div>
-</div>
+<!-- JOURNEY / TIMELINE -->
+<section id="timeline">
+  <h2 class="section-title">My Journey</h2>
+  <ul style="max-width: 800px; margin: auto; padding: 20px; list-style: none;">
+    <li data-aos="fade-left"><strong>2023-2024</strong> – MS in Project Management, CMU (4.0 GPA)</li>
+    <li data-aos="fade-left" data-aos-delay="100"><strong>2023–2024</strong> – Graduate Assistant, Innovation & Student Affairs</li>
+    <li data-aos="fade-left" data-aos-delay="200"><strong>2019–2022</strong> – Dentist/Project Coordinator at Al Moiz Medical & Dental Center</li>
+    <li data-aos="fade-left" data-aos-delay="300"><strong>2013-2017</strong> – BDS from University of Karachi</li>
+  </ul>
 </section>
 
-<section id="resume" style="background:#f4f6f8;">
-<h2 class="section-title">Resume</h2>
+!-- ✅ RESUME SLIDER (ONLY SECTION FUNCTIONALLY CHANGED) -->
+<section id="resume-preview" style="background-color:#f5f5f5;">
+  <h2 class="section-title">Resume</h2>
 
-<div class="resume-slider" data-aos="fade-up">
-<button class="resume-nav left" onclick="slideLeft()">&#10094;</button>
+  <div class="resume-slider">
+    <button class="resume-nav left" onclick="slideLeft()">&#10094;</button>
 
-<div class="resume-track" id="resumeTrack">
-<iframe src="SAK-xAI-RESUME.pdf#page=1" class="resume-slide"></iframe>
-<iframe src="SAK-xAI-RESUME.pdf#page=2" class="resume-slide"></iframe>
-</div>
+    <div class="resume-track" id="resumeTrack">
+      <iframe src="Shumaila-resume.pdf#page=1" class="resume-slide"></iframe>
+      <iframe src="Shumaila-resume.pdf#page=2" class="resume-slide"></iframe>
+    </div>
 
-<button class="resume-nav right" onclick="slideRight()">&#10095;</button>
-</div>
-
-<div class="resume-indicator">Page <span id="resumePage">1</span> of 2</div>
-
-<div style="text-align:center;">
-<a class="resume-download" href="SAK-xAI-RESUME.pdf" download>⬇ Download Resume</a>
-</div>
+    <button class="resume-nav right" onclick="slideRight()">&#10095;</button>
+  </div>
 </section>
 
-<section id="contact">
-<h2 class="section-title">Contact</h2>
-<p style="text-align:center;">
-Email: <a href="mailto:shumsark@gmail.com">shumsark@gmail.com</a><br>
-Phone: <a href="tel:+19896212662">+1 (989) 621‑2662</a>
-</p>
+<!-- TESTIMONIALS -->
+<section id="testimonials" style="background-color: #f0ebe3; padding: 60px 30px;">
+  <h2 class="section-title">Testimonials</h2>
+  <div style="max-width: 700px; margin: auto;">
+    <div class="testimonial" style="text-align: center;">
+      <p><em>"Shayla leads with clarity and purpose—an exceptional team player!"</em></p>
+      <p><strong>– Dr. Abdul Basit, Senior Director, Al-Moiz Medical & Dental Center</strong></p>
+    </div>
+    <div class="testimonial" style="text-align: center;">
+      <p><em>"Shumaila showed strong and rapid intellectual grasp of the highly technical concepts required to win the Capstone Competition."</em></p>
+      <p><strong>– Michael Dillon, Assistant Professor, CMU</strong></p>
+    </div>
+  </div>
 </section>
 
-<footer>
-© 2026 Shumaila Khan
+<!-- CONTACT QUICK -->
+<section id="contact-quick" style="background-color: #f6faff;">
+  <h2 class="section-title">Contact Me</h2>
+  <p style="text-align: center; font-size: 1.2rem;">
+    Email: <a href="mailto:shumsark@gmail.com" style="color: var(--primary);">shumsark@gmail.com</a><br>
+    Phone: <a href="tel:+19896212662" style="color: var(--primary);">+1 (989) 621-2662</a>
+  </p>
+</section>
+
+<!-- REQUEST FOR INFORMATION FORM -->
+<section id="contact" style="background: #f6faff;">
+  <h2 class="section-title">Request For Information</h2>
+  <form action="https://formspree.io/f/mqaqdgnd" method="POST" style="max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 15px; box-shadow: 0 6px 20px rgba(0,0,0,0.1);">
+    <input type="text" name="name" placeholder="Your Name" required style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 8px; border: 1px solid #ccc;"><br>
+    <input type="email" name="email" placeholder="Your Email" required style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 8px; border: 1px solid #ccc;"><br>
+    <textarea name="message" placeholder="Your Message" rows="5" required style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc;"></textarea><br>
+    <button type="submit" style="background-color: var(--primary); color: white; padding: 12px 25px; border: none; border-radius: 10px; margin-top: 15px;">📨 Send Message</button>
+  </form>
+</section>
+
+<!-- FLOATING EMAIL ICON -->
+<a href="mailto:shumsark@gmail.com" title="Chat with Shayla" style="position: fixed; bottom: 20px; left: 20px; background: #1a73e8; color: white; border-radius: 50%; width: 50px; height: 50px; font-size: 25px; display: flex; align-items: center; justify-content: center; text-decoration: none; z-index: 999; box-shadow: 0 5px 10px rgba(0,0,0,0.2);">📧</a>
+
+<!-- FOOTER -->
+<footer style="text-align: center; padding: 30px; background: var(--primary); color: white;">
+  <p>New Jersey | EST: <span id="clock"></span> | <a href="mailto:shumsark@gmail.com" style="color: #ffd;">shumsark@gmail.com</a></p>
+  <p>&copy; 2025 Shayla.com</p>
 </footer>
 
+<!-- JS Libraries & Scripts -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-AOS.init({ once: true });
+  AOS.init();
 
-let resumeIndex = 0;
-function slideLeft() {
-  resumeIndex = Math.max(resumeIndex - 1, 0);
-  document.getElementById("resumeTrack").style.transform =
-    `translateX(-${resumeIndex * 100}%)`;
-  document.getElementById("resumePage").textContent = resumeIndex + 1;
-}
-function slideRight() {
-  resumeIndex = Math.min(resumeIndex + 1, 1);
-  document.getElementById("resumeTrack").style.transform =
-    `translateX(-${resumeIndex * 100}%)`;
-  document.getElementById("resumePage").textContent = resumeIndex + 1;
-}
+  // Skill Bar Animation
+  const skillData = [
+    { id: 'skill1', value: 90 },
+    { id: 'skill2', value: 88 },
+    { id: 'skill3', value: 85 },
+    { id: 'skill4', value: 82 },
+    { id: 'skill5', value: 95 },
+    { id: 'skill6', value: 89 },
+    { id: 'skill7', value: 91 }
+  ];
+  window.addEventListener("load", () => {
+    skillData.forEach(skill => {
+      let i = 0;
+      const el = document.getElementById(skill.id);
+      if (!el) return;
+      const interval = setInterval(() => {
+        if (i >= skill.value) clearInterval(interval);
+        el.value = i++;
+      }, 15);
+    });
+  });
+
+  // Clock
+  function updateClock() {
+    const now = new Date();
+    document.getElementById("clock").textContent = now.toLocaleTimeString([], {
+      hour: "2-digit",
+      minute: "2-digit"
+    });
+  }
+  setInterval(updateClock, 1000);
+  updateClock();
 </script>
-
 </body>
 </html>
