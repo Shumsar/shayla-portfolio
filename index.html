@@ -245,23 +245,35 @@
   </ul>
 </section>
 
-!-- ✅ RESUME SLIDER (ONLY SECTION FUNCTIONALLY CHANGED) -->
-<section id="resume-preview" style="background-color:#f5f5f5;">
+
+!-- RESUME SECTION -->
+<section id="resume-preview" style="background:#f5f5f5; padding:60px 30px;">
   <h2 class="section-title">Resume</h2>
 
-  <div class="resume-slider">
-    <button class="resume-nav left" onclick="slideLeft()">&#10094;</button>
+  <div class="resume-wrapper">
+    <div class="resume-slider">
+      <button class="resume-nav left" onclick="slideLeft()">&#10094;</button>
 
-    <div class="resume-track" id="resumeTrack">
-      <iframe src="SAK-xAI-RESUME.pdf
+      <div class="resume-track" id="resumeTrack">
+        <iframe
+          src="SAK-xAI-RESUME.pdf#page=1"
+          class="resume-slide">
+        </iframe>
 
-#page=1" class="resume-slide"></iframe>
-      <iframe src="SAK-xAI-RESUME.pdf
+        <iframe
+          src="SAK-xAI-RESUME.pdf#page=2"
+          class="resume-slide">
+        </iframe>
+      </div>
 
-#page=2" class="resume-slide"></iframe>
+      <button class="resume-nav right" onclick="slideRight()">&#10095;</button>
     </div>
+  </div>
 
-    <button class="resume-nav right" onclick="slideRight()">&#10095;</button>
+  <div style="text-align:center; margin-top:20px;">
+    <a href="SAK-xAI-RESUME.pdf" download class="resume-download">
+      ⬇ Download Resume
+    </a>
   </div>
 </section>
 
